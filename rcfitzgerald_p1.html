@@ -18,7 +18,7 @@
   >
     <div class="card p-4 shadow-lg" style="max-width: 600px; width: 100%">
       <h1 class="text-warning text-center mb-4">
-        Business Analytics Student Survey - Part 1
+        Business Analytics Student Survey
       </h1>
       <form action="rcfitzgerald_p2.html" method="get">
         <!-- Home Country Field -->
@@ -34,38 +34,92 @@
           />
         </div>
 
-        <!-- Home Town Field with Tooltip -->
+        <!-- Home Town Field -->
         <div class="mb-3">
-          <label for="hometown" class="form-label">My home town is:</label>
-          <div class="input-group">
-            <input
-              type="text"
-              id="hometown"
-              name="hometown"
-              class="form-control"
-              required
-            />
-            <span
-              class="input-group-text"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="What town did you live in before coming to college?"
-            >
-              <i class="fas fa-question-circle"></i>
-            </span>
-          </div>
+          <label for="hometown" class="form-label"
+            >My home town is:
+            <span class="text-danger">Required field</span></label
+          >
+          <input
+            type="text"
+            id="hometown"
+            name="hometown"
+            class="form-control"
+            required
+          />
         </div>
 
         <!-- Home State Field -->
         <div class="mb-3">
           <label for="state" class="form-label">My home state is:</label>
-          <input type="text" id="state" name="state" class="form-control" />
+          <select name="state" id="state-select">
+            <option value="">-- choose state/territory --</option>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="ME">ME</option>
+            <option value="MD">MD</option>
+            <option value="MA">MA</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MS">MS</option>
+            <option value="MO">MO</option>
+            <option value="MT">MT</option>
+            <option value="NE">NE</option>
+            <option value="NV">NV</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NY">NY</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WV">WV</option>
+            <option value="WI">WI</option>
+            <option value="WY">WY</option>
+            <!-- Added Washington D.C. -->
+            <option value="DC">DC - Washington D.C.</option>
+            <!-- Added U.S. Territories -->
+            <option value="AS">AS - American Samoa</option>
+            <option value="GU">GU - Guam</option>
+            <option value="MP">MP - Northern Mariana Islands</option>
+            <option value="PR">PR - Puerto Rico</option>
+            <option value="VI">VI - U.S. Virgin Islands</option>
+          </select>
         </div>
 
-        <!-- BAIS Impression Field with Likert Scale -->
+        <!-- BAIS Impression Field -->
         <div class="mb-3">
           <label for="bais-impression" class="form-label">
             My impression of the BAIS major is:
+            <span class="text-danger">Required field</span>
           </label>
           <select
             id="bais-impression"
@@ -74,21 +128,17 @@
             required
           >
             <option value="">-- Select an option --</option>
-            <option value="5">Very Positive</option>
-            <option value="4">Somewhat Positive</option>
-            <option value="3">Neutral</option>
-            <option value="2">Somewhat Negative</option>
-            <option value="1">Very Negative</option>
+            <option value="very positive">Very Positive</option>
+            <option value="somewhat positive">Somewhat Positive</option>
+            <option value="neutral">Neutral</option>
+            <option value="somewhat negative">Somewhat Negative</option>
+            <option value="very negative">Very Negative</option>
           </select>
         </div>
 
         <!-- Navigation Button -->
-        <button
-          type="submit"
-          class="btn btn-warning w-100"
-          aria-label="Continue to Part 2"
-        >
-          <i class="fas fa-arrow-right"></i> Next
+        <button type="submit" class="btn btn-warning w-100" aria-label="Next">
+          Next <i class="fas fa-arrow-right"></i>
         </button>
       </form>
     </div>
