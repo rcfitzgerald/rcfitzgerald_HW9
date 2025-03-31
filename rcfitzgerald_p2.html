@@ -18,55 +18,149 @@
   >
     <div class="card p-4 shadow-lg" style="max-width: 600px; width: 100%">
       <h1 class="text-warning text-center mb-4">
-        Business Analytics Student Survey - Part 2
+        Business Analytics Student Survey
       </h1>
       <form action="rcfitzgerald_ty.html" method="get">
-        <!-- Favorite Course Field -->
+        <!-- Year at Iowa Field -->
         <div class="mb-3">
-          <label for="favorite-course" class="form-label">
-            My favorite BAIS course is:
-          </label>
-          <input
-            type="text"
-            id="favorite-course"
-            name="favorite-course"
-            class="form-control"
-            required
-          />
+          <label class="form-label"
+            >I am finishing my
+            <span class="text-danger">Required field</span></label
+          >
+          <div>
+            <input
+              type="radio"
+              id="first-year"
+              name="year"
+              value="first year"
+              required
+            />
+            <label for="first-year">First year at Iowa</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="second-year"
+              name="year"
+              value="second year"
+            />
+            <label for="second-year">Second year at Iowa</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="third-year"
+              name="year"
+              value="third year"
+            />
+            <label for="third-year">Third year at Iowa</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="fourth-year"
+              name="year"
+              value="fourth year"
+            />
+            <label for="fourth-year">Fourth year at Iowa</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="fifth-year"
+              name="year"
+              value="fifth year or more"
+            />
+            <label for="fifth-year">Fifth or more year at Iowa</label>
+          </div>
         </div>
 
-        <!-- Career Goal Field -->
+        <!-- BAIS Core Classes Completed -->
         <div class="mb-3">
-          <label for="career-goal" class="form-label">My career goal is:</label>
-          <textarea
-            id="career-goal"
-            name="career-goal"
-            class="form-control"
-            rows="3"
-            required
-          ></textarea>
-        </div>
-
-        <!-- Additional Comments Field -->
-        <div class="mb-3">
-          <label for="comments" class="form-label">
-            Additional comments about the BAIS major:
-          </label>
-          <textarea
-            id="comments"
-            name="comments"
-            class="form-control"
-            rows="3"
-          ></textarea>
+          <label class="form-label"
+            >BAIS core class I have completed
+            <span class="text-danger">Required field</span></label
+          >
+          <div>
+            <input
+              type="checkbox"
+              id="info-systems"
+              name="bais-classes"
+              value="Information Systems"
+              required
+            />
+            <label for="info-systems">Information Systems</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="operations"
+              name="bais-classes"
+              value="Operations"
+            />
+            <label for="operations">Operations</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="foundations"
+              name="bais-classes"
+              value="Foundations of Business Analytics"
+            />
+            <label for="foundations">Foundations of Business Analytics</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="comp-thinking"
+              name="bais-classes"
+              value="Computational Thinking"
+            />
+            <label for="comp-thinking">Computational Thinking</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="database"
+              name="bais-classes"
+              value="Database Management"
+            />
+            <label for="database">Database Management</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="data-wrangling"
+              name="bais-classes"
+              value="Data Wrangling"
+            />
+            <label for="data-wrangling">Data Wrangling</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="data-mining"
+              name="bais-classes"
+              value="Data Mining"
+            />
+            <label for="data-mining">Data Mining</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="capstone"
+              name="bais-classes"
+              value="BAIS Capstone"
+            />
+            <label for="capstone">BAIS Capstone</label>
+          </div>
         </div>
 
         <!-- Navigation Buttons -->
         <div class="d-flex justify-content-between">
-          <a href="rcfitzgerald_p1.html" class="btn btn-secondary">
-            <i class="fas fa-arrow-left"></i> Previous
-          </a>
-          <button type="submit" class="btn btn-warning">
-            Submit Survey <i class="fas fa-check"></i>
+          <a href="rcfitzgerald_p1.html" class="btn btn-secondary">Previous</a>
+          <button type="submit" class="btn btn-warning w-100">
+            Finish <i class="fas fa-check"></i>
           </button>
         </div>
       </form>
