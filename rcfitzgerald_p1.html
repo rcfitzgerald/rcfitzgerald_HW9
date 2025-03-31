@@ -3,31 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Survey - Page 1</title>
+    <title>Business Analytics Student Survey - Page 1</title>
   </head>
   <body>
     <h1>Business Analytics Student Survey</h1>
-    <form action="rcfitzgerald_p2.html">
+
+    <form action="rcfitzgerald_p2.html" method="get">
       <label for="country">My home country is:</label>
       <input type="text" id="country" name="country" autofocus required />
+      <br />
 
       <label for="hometown">My home town is:</label>
       <input type="text" id="hometown" name="hometown" required />
-      <span title="What town did you live in before coming to college?"
-        >❓</span
-      >
+      <br />
 
       <label for="state">My home state is:</label>
       <input type="text" id="state" name="state" />
+      <br />
 
       <label for="bais-impression">My impression of the BAIS major is:</label>
       <select id="bais-impression" name="bais-impression" required>
-        <option value="5">Very positive</option>
-        <option value="4">Somewhat positive</option>
-        <option value="3">Neutral</option>
-        <option value="2">Somewhat negative</option>
-        <option value="1">Very negative</option>
+        <option value="">-- Select an option --</option>
+        <option value="very positive">Very Positive</option>
+        <option value="somewhat positive">Somewhat Positive</option>
+        <option value="neutral">Neutral</option>
+        <option value="somewhat negative">Somewhat Negative</option>
+        <option value="very negative">Very Negative</option>
       </select>
+      <br />
 
       <button type="submit">Next</button>
     </form>
