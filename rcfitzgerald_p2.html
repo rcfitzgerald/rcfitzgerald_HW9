@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey Form Part 2 - Business Analytics Student Survey</title>
+    <title>Business Analytics Student Survey - Page 2</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -20,17 +20,58 @@
       <h1 class="text-warning text-center mb-4">
         Business Analytics Student Survey - Part 2
       </h1>
-      <form action="rcfitzgerald_ty.html">
-        <!-- Add any additional fields, like questions for more classes or feedback -->
+      <form action="rcfitzgerald_ty.html" method="get">
+        <!-- Favorite Course Field -->
+        <div class="mb-3">
+          <label for="favorite-course" class="form-label">
+            My favorite BAIS course is:
+          </label>
+          <input
+            type="text"
+            id="favorite-course"
+            name="favorite-course"
+            class="form-control"
+            required
+          />
+        </div>
 
-        <button
-          type="submit"
-          class="btn btn-warning w-100"
-          aria-label="Submit your survey"
-        >
-          <i class="fas fa-check-circle"></i> Submit Survey
-        </button>
+        <!-- Career Goal Field -->
+        <div class="mb-3">
+          <label for="career-goal" class="form-label">My career goal is:</label>
+          <textarea
+            id="career-goal"
+            name="career-goal"
+            class="form-control"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Additional Comments Field -->
+        <div class="mb-3">
+          <label for="comments" class="form-label">
+            Additional comments about the BAIS major:
+          </label>
+          <textarea
+            id="comments"
+            name="comments"
+            class="form-control"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="d-flex justify-content-between">
+          <a href="rcfitzgerald_p1.html" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Previous
+          </a>
+          <button type="submit" class="btn btn-warning">
+            Submit Survey <i class="fas fa-check"></i>
+          </button>
+        </div>
       </form>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey Form Part 1 - Business Analytics Student Survey</title>
+    <title>Business Analytics Student Survey - Page 1</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -20,70 +20,79 @@
       <h1 class="text-warning text-center mb-4">
         Business Analytics Student Survey - Part 1
       </h1>
-      <form action="rcfitzgerald_p2.html">
-        <!-- Year Field -->
+      <form action="rcfitzgerald_p2.html" method="get">
+        <!-- Home Country Field -->
         <div class="mb-3">
-          <label for="year" class="form-label">I am finishing my:</label>
-          <div
-            class="form-check"
-            data-bs-toggle="tooltip"
-            title="Select your current year at Iowa"
-          >
-            <input
-              type="radio"
-              class="form-check-input"
-              id="first-year"
-              name="year"
-              value="1"
-              required
-              autofocus
-            />
-            <label class="form-check-label" for="first-year"
-              >First year at Iowa</label
-            >
-          </div>
-          <!-- Add additional radio options for other years -->
+          <label for="country" class="form-label">My home country is:</label>
+          <input
+            type="text"
+            id="country"
+            name="country"
+            class="form-control"
+            autofocus
+            required
+          />
         </div>
 
-        <!-- Classes Completed Field -->
+        <!-- Home Town Field with Tooltip -->
         <div class="mb-3">
-          <label for="classes" class="form-label"
-            >BAIS core classes I have completed:</label
-          >
-          <div class="form-check">
+          <label for="hometown" class="form-label">My home town is:</label>
+          <div class="input-group">
             <input
-              type="checkbox"
-              class="form-check-input"
-              id="windows-systems"
-              name="classes"
-              value="Windows Systems"
+              type="text"
+              id="hometown"
+              name="hometown"
+              class="form-control"
               required
             />
-            <label class="form-check-label" for="windows-systems"
-              >Windows Systems</label
+            <span
+              class="input-group-text"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="What town did you live in before coming to college?"
             >
+              <i class="fas fa-question-circle"></i>
+            </span>
           </div>
-          <!-- Add additional checkbox options for other classes -->
         </div>
 
+        <!-- Home State Field -->
+        <div class="mb-3">
+          <label for="state" class="form-label">My home state is:</label>
+          <input type="text" id="state" name="state" class="form-control" />
+        </div>
+
+        <!-- BAIS Impression Field with Likert Scale -->
+        <div class="mb-3">
+          <label for="bais-impression" class="form-label">
+            My impression of the BAIS major is:
+          </label>
+          <select
+            id="bais-impression"
+            name="bais-impression"
+            class="form-select"
+            required
+          >
+            <option value="">-- Select an option --</option>
+            <option value="5">Very Positive</option>
+            <option value="4">Somewhat Positive</option>
+            <option value="3">Neutral</option>
+            <option value="2">Somewhat Negative</option>
+            <option value="1">Very Negative</option>
+          </select>
+        </div>
+
+        <!-- Navigation Button -->
         <button
           type="submit"
           class="btn btn-warning w-100"
           aria-label="Continue to Part 2"
         >
-          <i class="fas fa-arrow-right"></i> Continue to Part 2
+          <i class="fas fa-arrow-right"></i> Next
         </button>
       </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      );
-      tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
-    </script>
   </body>
 </html>
