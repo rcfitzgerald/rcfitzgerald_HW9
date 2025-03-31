@@ -3,44 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey - Page 2</title>
+    <title>Student Survey - Page 2</title>
+    <!-- Bootstrap 5.3 -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
   </head>
-  <body class="container mt-5">
-    <div class="card p-4 shadow">
-      <h1 class="text-center">Business Analytics Student Survey - Page 2</h1>
-      <form action="rcfitzgerald_ty.html" method="get">
+
+  <body
+    class="d-flex flex-column justify-content-center align-items-center vh-100 bg-light"
+  >
+    <div class="card p-4 shadow-lg" style="max-width: 600px; width: 100%">
+      <h1 class="text-primary text-center mb-4">
+        Business Analytics Student Survey
+      </h1>
+      <form action="hawkid_ty.html">
         <div class="mb-3">
-          <label for="favorite-course" class="form-label"
-            >My favorite BAIS course is:</label
-          >
-          <input
-            type="text"
-            id="favorite-course"
-            name="favorite-course"
-            class="form-control"
-            required
-          />
+          <p>I am finishing my:</p>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="first-year"
+              name="year"
+              value="1"
+              required
+            />
+            <label class="form-check-label" for="first-year"
+              >First year at Iowa</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="second-year"
+              name="year"
+              value="2"
+            />
+            <label class="form-check-label" for="second-year"
+              >Second year at Iowa</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="third-year"
+              name="year"
+              value="3"
+            />
+            <label class="form-check-label" for="third-year"
+              >Third year at Iowa</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="fourth-year"
+              name="year"
+              value="4"
+            />
+            <label class="form-check-label" for="fourth-year"
+              >Fourth year at Iowa</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="more-year"
+              name="year"
+              value="5"
+            />
+            <label class="form-check-label" for="more-year"
+              >5th or more year at Iowa</label
+            >
+          </div>
         </div>
 
         <div class="mb-3">
-          <label for="career-goal" class="form-label">My career goal is:</label>
-          <textarea
-            id="career-goal"
-            name="career-goal"
-            class="form-control"
-            rows="3"
-            required
-          ></textarea>
+          <p>BAIS core classes I have completed:</p>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="windows-systems"
+              name="classes"
+              value="Windows Systems"
+            />
+            <label class="form-check-label" for="windows-systems"
+              >Windows Systems</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="operations"
+              name="classes"
+              value="Operations"
+            />
+            <label class="form-check-label" for="operations">Operations</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="foundations"
+              name="classes"
+              value="Foundations"
+            />
+            <label class="form-check-label" for="foundations"
+              >Foundations of Business Analytics</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="computational"
+              name="classes"
+              value="Computational Thinking"
+            />
+            <label class="form-check-label" for="computational"
+              >Computational Thinking</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="database"
+              name="classes"
+              value="Database Management"
+            />
+            <label class="form-check-label" for="database"
+              >Database Management</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="data-wrangling"
+              name="classes"
+              value="Data Wrangling"
+            />
+            <label class="form-check-label" for="data-wrangling"
+              >Data Wrangling</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="data-mining"
+              name="classes"
+              value="Data Mining"
+            />
+            <label class="form-check-label" for="data-mining"
+              >Data Mining</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="bais-capstone"
+              name="classes"
+              value="BAIS Capstone"
+            />
+            <label class="form-check-label" for="bais-capstone"
+              >BAIS Capstone</label
+            >
+          </div>
         </div>
 
-        <div class="d-flex justify-content-between">
-          <a href="rcfitzgerald_p1.html" class="btn btn-secondary">Previous</a>
-          <button type="submit" class="btn btn-primary">Next</button>
-        </div>
+        <button type="submit" class="btn btn-primary mt-3 w-100">Finish</button>
       </form>
     </div>
   </body>
